@@ -1,0 +1,44 @@
+Source: zerovm
+Section: devel
+Priority: extra
+Maintainer: Constantine Peresypkin <constantine@litestack.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: http://www.zerovm.org
+
+Package: zerovm
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Lightweight virtualization platform
+ ZeroVM is an open-source lightweight virtualization platform 
+ having the following features:
+ .
+    Recreatable per web request: metered by milliseconds
+    Storage-embeddable: moving processing closer to data
+    Near-zero overhead: high-performance, great for data-crunching
+    SIMD left reachable: fully-leveraging underlying hardware
+    Multi-tenancy-grade secure isolation: no need for inner sandbox
+    Deterministic: productive development and auto-recoverable VM
+    Network-neutral: inproc, IPC, RDMA, infiniband, TCP/IP anything
+    Easily Clusterable: no network virtualization needed
+    Host-OS neutral: decoupling VM abstraction from host OS abstraction
+    Language-neutral: C/C++/Assembly and hence anything else too
+
+Package: zerovm-dev
+Architecture: amd64
+Depends: zerovm, ${shlibs:Depends}, ${misc:Depends}
+Description: Lightweight virtualization platform headers and libs
+ ZeroVM is an open-source lightweight virtualization platform 
+ having the following features:
+ .
+    Recreatable per web request: metered by milliseconds
+    Storage-embeddable: moving processing closer to data
+    Near-zero overhead: high-performance, great for data-crunching
+    SIMD left reachable: fully-leveraging underlying hardware
+    Multi-tenancy-grade secure isolation: no need for inner sandbox
+    Deterministic: productive development and auto-recoverable VM
+    Network-neutral: inproc, IPC, RDMA, infiniband, TCP/IP anything
+    Easily Clusterable: no network virtualization needed
+    Host-OS neutral: decoupling VM abstraction from host OS abstraction
+    Language-neutral: C/C++/Assembly and hence anything else too
+
