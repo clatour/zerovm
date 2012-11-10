@@ -1,7 +1,7 @@
 Source: zerovm
 Section: devel
 Priority: extra
-Maintainer: Constantine Peresypkin <constantine@litestack.com>
+Maintainer: Constantine Peresypkin <constantine@bigdatacraft.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.2
 Homepage: http://www.zerovm.org

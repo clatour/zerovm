@@ -20,7 +20,7 @@ zerovm (0.8.1) precise; urgency=low
   [ Constantine Peresypkin ]
   * added "dist" make target to build release version
 
- -- Constantine Peresypkin <constantine@litestack.com>  Wed, 31 Oct 2012 23:16:13 +0200
+ -- Constantine Peresypkin <constantine@bigdatacraft.com>  Wed, 31 Oct 2012 23:16:13 +0200
 
 zerovm (0.8) precise; urgency=low
 
@@ -128,7 +128,7 @@ zerovm (0.8) precise; urgency=low
 
   [ Constantine Peresypkin ]
 
- -- Constantine Peresypkin <constantine@litestack.com>  Sat, 27 Oct 2012 23:32:13 +0200
+ -- Constantine Peresypkin <constantine@bigdatacraft.com>  Sat, 27 Oct 2012 23:32:13 +0200
 
 zerovm (0.7) precise; urgency=low
 
@@ -235,7 +235,7 @@ zerovm (0.7) precise; urgency=low
 
   [ Constantine Peresypkin ]
 
- -- Constantine Peresypkin <constantine@litestack.com>  Tue, 18 Sep 2012 20:23:11 +0300
+ -- Constantine Peresypkin <constantine@bigdatacraft.com>  Tue, 18 Sep 2012 20:23:11 +0300
 
 zerovm (0.6) precise; urgency=low
 
@@ -359,7 +359,7 @@ zerovm (0.6) precise; urgency=low
 
   [ Constantine Peresypkin ]
 
- -- Constantine Peresypkin <constantine@litestack.com>  Sun, 22 Jul 2012 22:27:09 +0300
+ -- Constantine Peresypkin <constantine@bigdatacraft.com>  Sun, 22 Jul 2012 22:27:09 +0300
 
 zerovm (0.5) precise; urgency=low
 
@@ -378,7 +378,7 @@ zerovm (0.5) precise; urgency=low
 
   [ Constantine Peresypkin ]
 
- -- Constantine Peresypkin <constantine@litestack.com>  Sat, 12 May 2012 13:08:08 +0700
+ -- Constantine Peresypkin <constantine@bigdatacraft.com>  Sat, 12 May 2012 13:08:08 +0700
 
 zerovm (0.4) precise; urgency=low
 
@@ -419,7 +419,7 @@ zerovm (0.4) precise; urgency=low
 
   [ Constantine Peresypkin ]
 
- -- Constantine Peresypkin <constantine@litestack.com>  Sat, 10 Mar 2012 15:57:27 +0700
+ -- Constantine Peresypkin <constantine@bigdatacraft.com>  Sat, 10 Mar 2012 15:57:27 +0700
 
 zerovm (0.3) precise; urgency=low
 
@@ -449,7 +449,7 @@ zerovm (0.3) precise; urgency=low
 
   [ Constantine Peresypkin ]
 
- -- Constantine Peresypkin <constantine@litestack.com>  Sun, 25 Dec 2011 17:25:32 +0700
+ -- Constantine Peresypkin <constantine@bigdatacraft.com>  Sun, 25 Dec 2011 17:25:32 +0700
 
 zerovm (0.2) precise; urgency=low
 
@@ -475,10 +475,10 @@ zerovm (0.2) precise; urgency=low
 
   [ Constantine Peresypkin ]
 
- -- Constantine Peresypkin <constantine@litestack.com>  Sat, 10 Dec 2011 04:25:37 +0700
+ -- Constantine Peresypkin <constantine@bigdatacraft.com>  Sat, 10 Dec 2011 04:25:37 +0700
 
 zerovm (0.1) precise; urgency=low
 
   * Initial release 
 
- -- Constantine Peresypkin <constantine@litestack.com>  Sat, 26 Nov 2011 01:00:29 +0700
+ -- Constantine Peresypkin <constantine@bigdatacraft.com>  Sat, 26 Nov 2011 01:00:29 +0700
