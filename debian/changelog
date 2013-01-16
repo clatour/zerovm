@@ -1,3 +1,32 @@
+zerovm (0.8.2) precise; urgency=low
+
+  [ Constantine Peresypkin ]
+  * fixed cpp flugs in Makefile
+
+  [ bortoq ]
+  * makefile changes
+  * #92
+  * #79 nacl errno.h and mman.h removed. #92 affected code refactored
+  * #79 #92 particular headers refactored/moved/removed
+  * #79 nacl_base.h pruned
+  * #79 src/include revised and cleaned #92 refactoring has been done
+  * #79 tiny nacl_time_types.h removed, refactoring done
+  * fix
+  * #79 data execution prevention test gathered in one file
+  * #79 platform_init.*, nrd_all_modules.* and nacl_all_modules.* were removed. nacl_syscalls.h added
+  * changes in log
+  * logs updated. fixed small bug in finalizer
+  * test fixed
+
+  [ YaroslavLitvinov ]
+  * ifdef USER_SIDE added
+
+  [ Constantine Peresypkin ]
+  * release version 0.8.1
+  * author fix
+
+ -- Constantine Peresypkin <constantine@litestack.com>  Mon, 12 Nov 2012 00:10:36 +0200
+
 zerovm (0.8.1) precise; urgency=low
 
   [ Constantine Peresypkin ]
