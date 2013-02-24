@@ -15,13 +15,14 @@
 
 # This has to be exported to make some magic below work.
 export DH_OPTIONS
-export NACL_SDK_ROOT=${HOME}/nacl_sdk/pepper_21
+#export NACL_SDK_ROOT=${HOME}/nacl_sdk/pepper_23
 export ZEROVM_ROOT=${HOME}/git/zerovm
 export ZRT_ROOT=${HOME}/git/zrt
-export SAMPLE_DIR=${CURDIR}/debian/zerovm-dev/usr/share/zerovm/samples
-export TESTS_DIR=${CURDIR}/debian/zerovm-dev/usr/share/zerovm/tests
-export INCLUDE_DIR=${CURDIR}/debian/zerovm-dev/usr/include/zerovm
-export NACL_STRIP=${NACL_SDK_ROOT}/toolchain/linux_x86_glibc/bin/x86_64-nacl-strip
+export SAMPLE_DIR=${CURDIR}/debian/zerovm-dev/opt/zerovm/samples
+export TESTS_DIR=${CURDIR}/debian/zerovm-dev/opt/zerovm/tests
+export INCLUDE_DIR=${CURDIR}/debian/zerovm-dev/opt/zerovm/include
+export LIBRARY_DIR=${CURDIR}/debian/zerovm-dev/opt/zerovm/lib
+#export NACL_STRIP=${NACL_SDK_ROOT}/toolchain/linux_x86_glibc/bin/x86_64-nacl-strip
 
 %:
 	dh $@ 
@@ -34,7 +35,7 @@ override_dh_auto_build:
 override_dh_auto_install:
 	# zerovm
 	install -D -m 0755 $(ZEROVM_ROOT)/zerovm $(CURDIR)/debian/zerovm/usr/bin/zerovm
-	install -D -m 0644 $(ZEROVM_ROOT)/api/libzvm.a $(CURDIR)/debian/zerovm-dev/usr/lib/zerovm/libzvm.a
+	install -D -m 0644 $(ZEROVM_ROOT)/api/libzvm.a $(LIBRARY_DIR)/libzvm.a
 	install -D -m 0644 $(ZEROVM_ROOT)/api/zvm.h $(INCLUDE_DIR)/zvm.h
 	install -D -m 0755 /usr/lib/nacl/nacl_sdk/pepper_21/tools/ncval_x86_64 $(CURDIR)/debian/zerovm/usr/bin/ncval
 	chrpath -d $(CURDIR)/debian/zerovm/usr/bin/ncval
@@ -50,12 +51,12 @@ override_dh_auto_install:
 	install -D -m 0644 $(ZRT_ROOT)/lib/networking/channels_conf.h $(INCLUDE_DIR)/networking/channels_conf.h
 	install -D -m 0644 $(ZRT_ROOT)/lib/networking/channels_conf_reader.h $(INCLUDE_DIR)/networking/channels_conf_reader.h
 	install -D -m 0644 $(ZRT_ROOT)/lib/networking/eachtoother_comm.h $(INCLUDE_DIR)/networking/eachtoother_comm.h
-	install -D -m 0644 $(ZRT_ROOT)/lib/libzrt.a $(CURDIR)/debian/zerovm-dev/usr/lib/zerovm/libzrt.a
-	install -D -m 0644 $(ZRT_ROOT)/lib/libfs.a $(CURDIR)/debian/zerovm-dev/usr/lib/zerovm/libfs.a
-	install -D -m 0644 $(ZRT_ROOT)/lib/liblua.a $(CURDIR)/debian/zerovm-dev/usr/lib/zerovm/liblua.a
-	install -D -m 0644 $(ZRT_ROOT)/lib/libmapreduce.a $(CURDIR)/debian/zerovm-dev/usr/lib/zerovm/libmapreduce.a
-	install -D -m 0644 $(ZRT_ROOT)/lib/libnetworking.a $(CURDIR)/debian/zerovm-dev/usr/lib/zerovm/libnetworking.a
-	install -D -m 0644 $(ZRT_ROOT)/lib/libsqlite3.a $(CURDIR)/debian/zerovm-dev/usr/lib/zerovm/libsqlite3.a
+	install -D -m 0644 $(ZRT_ROOT)/lib/libzrt.a $(LIBRARY_DIR)/libzrt.a
+	install -D -m 0644 $(ZRT_ROOT)/lib/libfs.a $(LIBRARY_DIR)/libfs.a
+	install -D -m 0644 $(ZRT_ROOT)/lib/liblua.a $(LIBRARY_DIR)/liblua.a
+	install -D -m 0644 $(ZRT_ROOT)/lib/libmapreduce.a $(LIBRARY_DIR)/libmapreduce.a
+	install -D -m 0644 $(ZRT_ROOT)/lib/libnetworking.a $(LIBRARY_DIR)/libnetworking.a
+	install -D -m 0644 $(ZRT_ROOT)/lib/libsqlite3.a $(LIBRARY_DIR)/libsqlite3.a
 	# samples
 	install -D -m 0644 $(ZRT_ROOT)/ns_server.py $(SAMPLE_DIR)/ns_server.py
 	install -D -m 0755 $(ZRT_ROOT)/ns_start.sh $(SAMPLE_DIR)/ns_start.sh
